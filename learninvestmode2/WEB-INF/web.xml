@@ -1,0 +1,93 @@
+<web-app>
+
+	<servlet>
+		<servlet-name>LoginControl</servlet-name>
+		<servlet-class>LoginControl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginControl</servlet-name>
+		<url-pattern>/LoginControl</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>RegisterControl</servlet-name>
+		<servlet-class>RegisterControl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegisterControl</servlet-name>
+		<url-pattern>/RegisterControl</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>BuyStockControl</servlet-name>
+		<servlet-class>BuyStockControl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>BuyStockControl</servlet-name>
+		<url-pattern>/BuyStockControl</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>SellStockControl</servlet-name>
+		<servlet-class>SellStockControl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SellStockControl</servlet-name>
+		<url-pattern>/SellStockControl</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ViewUserProfileControl</servlet-name>
+		<servlet-class>ViewUserProfileControl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ViewUserProfileControl</servlet-name>
+		<url-pattern>/ViewUserProfileControl</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DeleteUserAccount</servlet-name>
+		<servlet-class>DeleteUserAccount</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteUserAccount</servlet-name>
+		<url-pattern>/DeleteUserAccount</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>LogOut</servlet-name>
+		<servlet-class>LogOut</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LogOut</servlet-name>
+		<url-pattern>/LogOut</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>RefreshStock</servlet-name>
+		<servlet-class>RefreshStock</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RefreshStock</servlet-name>
+		<url-pattern>/RefreshStock</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>EditUserProfile</servlet-name>
+		<servlet-class>EditUserProfile</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EditUserProfile</servlet-name>
+		<url-pattern>/EditUserProfile</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>RealTimeStock</servlet-name>
+		<servlet-class>RealTimeStock</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RealTimeStock</servlet-name>
+		<url-pattern>/RealTimeStock</url-pattern>
+	</servlet-mapping>
+	
+</web-app>

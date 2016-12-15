@@ -1,0 +1,32 @@
+.formbox{
+border:2px solid #00803F;
+margin-top:50px;
+}
+
+form{
+    color:#00803F;
+    font-family: 'Bree Serif', serif;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.stext{
+    font-size:1.5em;
+    margin-top: 60px;
+}
+
+.but{
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: -20px;
+}
+
+input[type="date"]:before {
+    content: attr(placeholder) !important;
+    color:  #00803F;
+    margin-right: 0.5em;
+  }
+  input[type="date"]:focus:before,
+  input[type="date"]:valid:before {
+    content: "";
+  }

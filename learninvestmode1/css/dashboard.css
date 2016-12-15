@@ -1,0 +1,62 @@
+.stock-table-div{
+	margin-top: 10px;
+	font-family: 'Bree Serif', serif;
+
+}
+
+.stock-table {
+	font-variant: small-caps;
+}
+
+h2 {
+	margin-top: 40px;
+	/*font-family: 'Bree Serif', serif;*/
+	color:#00803F;;
+}
+
+.buybut,.sellbut {
+	color:#fefefe;
+    border-radius:10px;
+    background-color: #00803F;
+    border: none;
+    width: 170px;
+    padding: 10px;
+    font-family: 'Bree Serif', serif;
+    font-weight: bold;
+    margin-top: 30px;
+
+}
+
+.buybut:hover,.sellbut:hover{
+    color:#00803F;
+    background-color: #fefefe;
+    border: 1px solid  #00803F;
+}
+
+.rbut{
+    color:#fefefe;
+    border-radius:10px;
+    background-color: #00803F;
+    border: none;
+    width: 250px;
+    padding: 10px;
+    font-family: 'Bree Serif', serif;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-left: 25px;
+
+}
+
+.rbut:hover{
+    color:#00803F;
+    background-color: #fefefe;
+    border: 1px solid  #00803F;
+}
+th {
+	font-size: 1.5em;
+}
+
+.wtxt{
+    color:#00803F;
+    margin-top: 80px;
+}

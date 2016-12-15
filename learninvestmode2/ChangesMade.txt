@@ -1,0 +1,57 @@
+
+[change password in all files as needed- 'muthu' or 'muthu']
+
+IMPORTANT- WAS CAPITAL CHANGED TO 1 LAKH?
+
+Changes made to previous version of the project [ previous version dated Oct 9,2016 -admin version] :
+
+length of password field in user table increase to 50
+because of md5 hashing algorithm used.
+QUERY: alter table user modify password varchar(50);
+
+Files in which alteration carried out:
+
+register control.java (I have set min password length as 8 - additional feature)
+ 
+register invalid.jsp
+
+login control.java
+
+edit user profile.java
+
+edit user profile.jsp
+
+Change stock price.java [ queries optimised ]
+
+AdminLogin.java
+
+new file: edit-invalid.jsp
+
+i also included realTimeStock.java in admin mode app temporarily
+
+to do:
+//change changeStockPrice.java to previous version
+logout in admin
+//textarea in admin 
+ui of admin - alter it
+rupees and dollar- everywhere
+
+CREATE SEPARATE DATABASE FOR REAL TIME STOCK QUOTES USING THE SAME TABLES
+DEPLOY ON GITHUB
+
+
+
+
+changing the passwords in my DB to the hashed equivalent:
+
+UPDATE USER SET PASSWORD='' WHERE UNAME='';
+
+UPDATE USER SET PASSWORD='66694d033d86111664d3617452e1b9e8' WHERE UNAME='user007';
+
+UPDATE USER SET PASSWORD='62281f82c759caf5650fcc145927f568' WHERE UNAME='manish974';
+
+UPDATE USER SET PASSWORD='9d7eb50090279efaf47b5d063c3fed12' WHERE UNAME='vk123';
+
+UPDATE USER SET PASSWORD='73c96188e808f944f63e07bb5b381fee' WHERE UNAME='vicky';
+
+UPDATE USER SET PASSWORD='e51505fbc3b4e38eaaef0d7c0abb00a2' WHERE UNAME='mac25796';
