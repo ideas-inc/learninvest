@@ -142,7 +142,7 @@ Need Help?
 
  <footer>
         <center>
-            <p><span class="">&copy;Copyright 2016 LEARN.INVEST</span></p>
+            <p><span class="">&copy;Copyright 2016 IDEAS INC.</span></p>
             <span> Website Design and Development : <a href="#">Muthu Annamalai CT   </a> &amp; <a href="#">  Manish Chandra C</a></span>
         </center>
     </footer>

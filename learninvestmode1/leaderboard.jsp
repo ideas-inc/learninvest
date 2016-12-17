@@ -1,7 +1,7 @@
 <%@ page import="java.lang.*,java.io.*,java.util.*,java.sql.*"%>
 <%@ page import="javax.servlet.http.*,javax.servlet.*" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql"%> 
+<%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql"%>
 
 
 <html>
@@ -9,6 +9,7 @@
 
 <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta http-equiv="refresh" content="10" />
     <title>Leaderboard</title>
 	<link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
     <link rel="icon" type="image/png" href="/project/images/logonav.png">
@@ -28,10 +29,10 @@
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 
-<body> 
+<body>
 <sql:setDataSource var="snapshot" driver="com.mysql.jdbc.Driver"
      url="jdbc:mysql://localhost:3306/vts"
-     user="root"  password="muthu"/> 
+     user="root"  password="muthu"/>
 
 <sql:query dataSource="${snapshot}" var="result">
 select * from user order by pvalue desc;
@@ -42,7 +43,7 @@ select * from user order by pvalue desc;
         <div class="container-fluid">
             <div class="navbar-header page-scroll">
 
-             
+
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
@@ -66,18 +67,18 @@ select * from user order by pvalue desc;
                     </ul>
                 </center>
             </div>
-            
+
         </div>
     </nav>
 
 
-<h2 style="margin-top:120px;" class="text-center">USER LEADERBOARD</h2>
+<h2 style="margin-top:120px;" class="text-center"><i class="fa fa-trophy"></i> USER LEADERBOARD</h2>
 <p class="text-center visible-xs" style="font-size:15px;">(Scroll Right to view Complete Table)</p>
 <div class="container">
 <div class="col-sm-offset-1 col-sm-9 table-responsive">
 <table class="table table-bordered text-center">
 <tbody style="font-family: 'Bree Serif', serif !important;">
-<tr>   
+<tr>
     <th>Rank</th>
 	<th>Username</th>
     <th>First name</th>
@@ -101,19 +102,19 @@ select * from user order by pvalue desc;
    <c:set var="c" value="${row.capital}" />
    <c:set var="e" value="${d*100}" />
    <td> <jsp:text> ${e/c} %</jsp:text> </td>
-   
-</tr> 
+
+</tr>
 
 </c:forEach>
 </tbody>
  </table>
  </div>
  </div>
-	
-	
-	
-	
-	
+
+
+
+
+
 <br/>
 <br/>
 <br/>
@@ -152,5 +153,5 @@ select * from user order by pvalue desc;
     <script src="js/scrolling-nav.js"></script>
     <script src="js/main.js"></script>
 
-</body> 
+</body>
 </html>

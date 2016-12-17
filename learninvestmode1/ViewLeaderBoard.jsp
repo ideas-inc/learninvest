@@ -7,6 +7,7 @@
 
 <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta http-equiv="refresh" content="10" />
     <title>Leader Board</title>
 	<link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
     <link rel="icon" type="image/png" href="/project/images/logonav.png">
@@ -46,24 +47,26 @@ select * from user order by pvalue desc;
 <h2 class="text-center">USER LEADERBOARD</h2>
 <p class="text-center visible-xs" style="font-size:15px;">(Scroll Right to view Complete Table)</p>
 <div class="container">
-<div class="col-sm-offset-1 col-sm-9 stock-table-div table-responsive">
+<div class="col-sm-offset-1 col-sm-10 stock-table-div table-responsive">
 <table class="table table-bordered text-center">
 <tbody style="font-family: 'Bree Serif', serif !important;">
-<tr>   
+<tr> 
+    <th>Rank</th>  
     <th>Username</th>
     <th>First name</th>
     <th>Last name</th>
     <th>Portfolio Value</th>
     <th>Cash</th>
-	<th>Profit/Loss %</th>
+	<th>Profit/Loss</th>
 </tr>
 
-
+<c:set var="rank" value="0" />
 
 <c:forEach var="row" items="${result.rows}">
 
 <tr>
-
+   <c:set var="rank" value="${rank + 1}" />
+   <td> <c:out value="${rank}"/>  </td>
    <td><c:out value="${row.uname}"/></td>
    <td><c:out value="${row.first}"/></td>
    <td><c:out value="${row.last}"/></td>

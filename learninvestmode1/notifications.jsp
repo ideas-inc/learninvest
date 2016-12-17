@@ -1,12 +1,12 @@
 <%@ page import="java.lang.*,java.io.*,java.util.*,java.sql.*"%>
 <%@ page import="javax.servlet.http.*,javax.servlet.*" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql"%> 
+<%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql"%>
 <html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-	<meta http-equiv="refresh" content="10" />
+	<meta http-equiv="refresh" content="20" />
     <title>Notifications</title>
 	<link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
     <link rel="icon" type="image/png" href="/project/images/logonav.png">
@@ -26,10 +26,10 @@
 
 </head>
 
-<body> 
+<body>
 <sql:setDataSource var="snapshot" driver="com.mysql.jdbc.Driver"
      url="jdbc:mysql://localhost:3306/vts"
-     user="root"  password="muthu"/> 
+     user="root"  password="muthu"/>
 
 <sql:query dataSource="${snapshot}" var="result">
 select * from stock;
@@ -40,7 +40,7 @@ select * from stock;
         <div class="container-fluid">
             <div class="navbar-header page-scroll">
 
-             
+
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
@@ -64,7 +64,7 @@ select * from stock;
                     </ul>
                 </center>
             </div>
-            
+
         </div>
     </nav>
 
@@ -77,32 +77,34 @@ select * from stock;
 select * from adminmessage order by id desc;
 </sql:query>
 
-<h2 class="text-center">Notifications / News [Latest first]</h2>
+<h2 class="text-center"><i class="fa fa-bell"></i> Notifications / News [Latest first]</h2>
+<h4 class="text-center">Invest based on your interpretation of these notifications from Admin</h4>
+<p class="text-center visible-xs" style="font-size:15px;">(Scroll Right to view Complete Table)</p>
 <div class="container">
 <div class="col-sm-offset-2 col-sm-8 table-responsive" height="200px" style="overflow-y:scroll">
 <table class=" table table-bordered text-center">
 <tbody>
-<tr>   
-	<th class="text-center" style="color:red">NOTIFICATIONS</th> 
+<tr>
+	<th class="text-center" style="color:red">NOTIFICATIONS</th>
 </tr>
 <c:forEach var="row" items="${infoResult.rows}">
 <tr>
-   <td style="color:red"><c:out value="${row.info}"/></td> 
-</tr> 
+   <td style="color:red"><c:out value="${row.info}"/></td>
+</tr>
 </c:forEach>
 </tbody>
  </table>
  </div>
  </div>
- 
- 
+
+
 
 </div>
 </div>
-    
-    
-   
-    
+
+
+
+
 
 <br/>
 <br/>
@@ -140,5 +142,5 @@ select * from adminmessage order by id desc;
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/scrolling-nav.js"></script>
     <script src="js/main.js"></script>
- </body> 
+ </body>
  </html>
